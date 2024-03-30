@@ -1,3 +1,4 @@
+#save notes
 import streamlit as st
 import os
 
@@ -32,11 +33,11 @@ def get_default_title():
     # If there are existing files, find the next available note number
     if existing_files:
         note_number = 1
-        while f"note{note_number:02d}.txt" in existing_files:
+        while f"Note-{note_number:02d}.txt" in existing_files:
             note_number += 1
-        return f"note{note_number:02d}"
+        return f"Note-{note_number:02d}"
     else:
-        return "note01"
+        return "Note-01"
 
 def save_note_to_file(note_title, note_content):
     # Define the folder path where notes will be saved

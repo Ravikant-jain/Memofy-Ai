@@ -1,0 +1,42 @@
+**Data Science**
+
+**K-Nearest Neighbors (KNN)**
+
+**Overview:**
+* KNN is a non-parametric, supervised machine learning algorithm that classifies data by considering the labels of its K nearest neighbors.
+
+**Key Concepts:**
+
+* **Distance metric:** Measure of similarity between data points (e.g., Euclidean distance, cosine similarity).
+* **K:** Number of nearest neighbors used for classification.
+* **Majority vote:** Assigns the class label that occurs most frequently among the K nearest neighbors.
+
+**Examples:**
+
+* Classifying handwritten digits (MNIST dataset)
+* Predicting customer churn
+* Identifying fraudulent transactions
+
+**Steps:**
+
+1. Choose a distance metric and a value for K.
+2. Calculate the distance between the new data point and all other data points.
+3. Find the K nearest neighbors.
+4. Assign the class label based on a majority vote.
+
+**Advantages:**
+
+* Simple and easy to implement
+* Non-parametric, making it suitable for diverse data types
+* Performs well with small datasets
+
+**Disadvantages:**
+
+* Sensitive to noise and outliers
+* Computational cost can be high for large datasets
+* Can be biased towards dominant classes
+
+**Hyperparameter Tuning:**
+
+* **K:** Experiment with different values to find the optimal K for the specific dataset.
+* **Distance metric:** Consider alternative metrics to improve classification accuracy.

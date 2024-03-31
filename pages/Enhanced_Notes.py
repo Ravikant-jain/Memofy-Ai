@@ -19,8 +19,6 @@ def poopmt(que,trpt='No instruction right now'):
 '''.format(que,trpt)
     return poompt
 
-
-
 # genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # model = genai.GenerativeModel('gemini-pro')
 # pmt=poopmt('DataScience- RNN,CNN,ANN,KNN')

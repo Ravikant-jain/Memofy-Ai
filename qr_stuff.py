@@ -1,6 +1,3 @@
-
-import qrcode
-
 # Long text to be encoded
 long_text = """- **Recurrent Neural Networks (RNNs)**
   - Used for sequential data with dependencies between elements
@@ -26,11 +23,12 @@ long_text = """- **Recurrent Neural Networks (RNNs)**
     - Number of neighbors (k)
     - Distance metric used for calculating nearest neighbors"""
 
-
 import qrcode
 from PIL import Image
+import cv2
+import pyzbar.pyzbar as pyzbar
 
-def generate_qr_code(text, desired_width, desired_height, filename="long_text_qrcode.png"):
+def generate_qr_code(text, desired_width=500, desired_height=500, filename="pages\long_text_qrcode.png"):
 
 
     # Create a QRCode object with appropriate settings for long text
@@ -68,12 +66,8 @@ def generate_qr_code(text, desired_width, desired_height, filename="long_text_qr
     print(f"QR code generated successfully and saved to '{filename}'!")
 
 # Example usage
-generate_qr_code("Your lengthy text here", 500, 500)
+generate_qr_code("Your lengthy text here")#pass fname also 
 
-
-
-import cv2
-import pyzbar.pyzbar as pyzbar
 
 def read_qr_code(image_path):
 
@@ -95,10 +89,10 @@ def read_qr_code(image_path):
     return None
 
 # Example usage
-image_path = r"D:\Github\Notepad\long_text_qrcode.png"  # Replace with your actual image path
-qr_data = read_qr_code(image_path)
+# image_path = r"D:\Github\Notepad\qr\New Notes.png"  # Replace with your actual image path
+# qr_data = read_qr_code(image_path)
 
-if qr_data:
-  print("QR code data:", qr_data)
-else:
-  print("No QR code found in the image.")
+# if qr_data:
+#   print("QR code data:", qr_data)
+# else:
+#   print("No QR code found in the image.")

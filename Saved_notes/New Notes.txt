@@ -1,0 +1,23 @@
+- **Recurrent Neural Networks (RNNs)**
+  - Used for sequential data with dependencies between elements
+  - Examples: Natural language processing (NLP), speech recognition
+  - Types of RNNs include:
+    - Long short-term memory (LSTM)
+    - Gated recurrent unit (GRU)
+
+- **Convolutional Neural Networks (CNNs)**
+  - Used for data with grid-like structure, such as images and audio
+  - Feature extraction is done through convolutions, allowing for spatial relationships to be learned
+  - Examples: Image classification, object detection
+  - Layers in CNNs include:
+    - Convolutional layers
+    - Pooling layers
+    - Fully connected layers
+
+- **K-Nearest Neighbors (KNN)**
+  - Non-parametric algorithm for classification and regression
+  - Assigns a label or value to a new data point based on the majority vote or average of its k nearest neighbors in the training set
+  - Examples: Handwritten digit recognition, medical diagnosis
+  - Hyperparameters:
+    - Number of neighbors (k)
+    - Distance metric used for calculating nearest neighbors

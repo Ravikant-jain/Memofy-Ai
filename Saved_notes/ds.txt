@@ -1,4 +1,5 @@
-**Data Science**
+
+    **Data Science**
 
 **K-Nearest Neighbors (KNN)**
 
@@ -40,3 +41,9 @@
 
 * **K:** Experiment with different values to find the optimal K for the specific dataset.
 * **Distance metric:** Consider alternative metrics to improve classification accuracy.
+    
+    Question: what is sigmoid ?
+    
+    Answer: <function ans at 0x000001808334C5E0>
+    
+    
